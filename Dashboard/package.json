@@ -1,0 +1,21 @@
+{
+  "name": "website-blog",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  },
+  "dependencies": {
+    "flowbite": "^2.5.2",
+    "preline": "^2.5.1",
+    "sweetalert2": "^11.14.5"
+  },
+  "keywords": [],
+  "description": ""
+}
