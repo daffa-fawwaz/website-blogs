@@ -1,39 +1,9 @@
+
 const lang = document.getElementById("lang")
 const setLang = document.getElementById("set-lang")
 
 setLang.addEventListener("click", function() {
     lang.classList.toggle("opacity-0")
-})
-
-const btnSearch = document.getElementById("btn-search")
-const btnCloseSearch = document.getElementById("btn-close-search")
-const search = document.getElementById("search")
-
-btnSearch.addEventListener("click", function() {
-    search.classList.toggle("opacity-0")
-})
-
-btnCloseSearch.addEventListener("click", function() {
-    search.classList.add("opacity-0")
-})
-
-const btnNavMobile = document.getElementById("btn-nav-mobile")
-const btnCloseNavMobile = document.getElementById("close-navbar")
-const navMobile = document.getElementById("nav-mobile")
-const layout = document.getElementById("layout")
-
-
-btnNavMobile.addEventListener("click", function() {
-    navMobile.classList.add("translate-x-0")
-    navMobile.classList.remove("-translate-x-full")
-    layout.classList.remove("opacity-0")
-    layout.classList.add("z-50")
-})
-btnCloseNavMobile.addEventListener("click", function() {
-    navMobile.classList.add("-translate-x-full")
-    navMobile.classList.remove("translate-x-0")
-    layout.classList.add("opacity-0")
-    layout.classList.remove("z-50")
 })
 
 const btnKategori = document.getElementById("btn-kategori")
@@ -54,15 +24,16 @@ const formatLang = document.getElementById("format-lang")
 
 checkLang.addEventListener("change", function() {
     if(checkLang.checked) {
-        country.innerHTML = '<img src="./img/england.png" alt="" class="w-full" />'
+        country.innerHTML = '<img src="./../img/england.png" alt="" class="w-full" />'
         textCountry.innerHTML = 'EN'
         formatLang.innerHTML = 'ID'
     } else {
-        country.innerHTML = '<img src="./img/indonesia.png" alt="" class="w-full" />'
+        country.innerHTML = '<img src="./../img/indonesia.png" alt="" class="w-full" />'
         textCountry.innerHTML = 'ID'
         formatLang.innerHTML = 'EN'
     }
 })
+
 
 
 

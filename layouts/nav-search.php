@@ -13,7 +13,7 @@
                               d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
                       </svg>
                   </div>
-                  <a href="index.php">
+                  <a href="./../views/index.php">
                       <div class="w-16">
                           <img src="./../img/White Logo 1.png" alt="" class="w-full" />
                       </div>
@@ -98,13 +98,13 @@
               <div class="flex">
                   <ul class="flex items-center gap-8">
                       <li id="home" class="text-lg text-white font-semibold">
-                          <a href="index.php">Home</a>
+                          <a href="./../views/index.php">Home</a>
                       </li>
                       <li class="hidden-nav text-lg text-white font-semibold">
-                          <a href="profile.php">Profile</a>
+                          <a href="./../views/profile.php">Profile</a>
                       </li>
                       <li class="hidden-nav text-lg text-white font-semibold">
-                          <a href="contact.php">Contact</a>
+                          <a href="./../views/contact.php">Contact</a>
                       </li>
                   </ul>
               </div>
@@ -165,12 +165,21 @@
               <ul
                   class="mt-16 flex flex-col gap-7 text-left ml-5 text-white font-semibold">
                   <li class="hover:text-blue-500">
-                      <a href="index.php">Home</a>
+                      <a href="#">Home</a>
                   </li>
                   <li class="hover:text-blue-500">
-                      <a href="profile.php">Profile</a>
+                      <a href="tentang-kami.php">Blog</a>
                   </li>
-                  <li class="hover:text-blue-500"><a href="contact.php">Contact</a></li>
+                  <li class="hover:text-blue-500"><a href="#jurusan">Penulis</a></li>
+                  <li class="hover:text-blue-500">
+                      <a href="#ekskul">Tentang Kami</a>
+                  </li>
+                  <li class="hover:text-blue-500">
+                      <a href="berita.php">Berita</a>
+                  </li>
+                  <li class="hover:text-blue-500">
+                      <a href="#dokumentasi">Dokumentasi</a>
+                  </li>
                   <li class="hover:text-blue-500">
                       <input
                           type="checkbox"

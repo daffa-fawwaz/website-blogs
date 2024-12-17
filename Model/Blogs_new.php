@@ -44,7 +44,7 @@ class Blogs_new extends Model
         $query = "SELECT * FROM posts JOIN categories ON posts.category_id = categories.id_category JOIN users ON posts.user_id = users.id_user WHERE posts.user_id = '$id'";
 
         $result = mysqli_query($this->db, $query);
- 
+
         return $this->convert_data($result);
     }
 
@@ -60,6 +60,16 @@ class Blogs_new extends Model
     public function contacts()
     {
         $query = "SELECT * FROM contacts";
+
+        $result = mysqli_query($this->db, $query);
+
+        return $this->convert_data($result);
+    }
+
+    public function search($keyword)
+    {
+        $keyword = mysqli_real_escape_string($this->db, $keyword);
+        $query = "SELECT * FROM posts JOIN categories ON categories.id_category = posts.category_id WHERE title LIKE '%$keyword%'";
 
         $result = mysqli_query($this->db, $query);
 
